@@ -1,0 +1,66 @@
+@import url("reset.css");
+
+.section {
+    padding: 20px;
+}
+
+.section * {
+    padding-top: 5px;
+}
+
+.sub-section h3 {
+    color: red;
+}
+
+ol > li {
+    list-style: lower-latin;
+    margin-left: 1.5rem;
+}
+
+div.sub-section ol > li > ul > li {
+    list-style: circle;
+        margin-left: 1.5rem;
+}
+div.sub-section ul>li {
+    list-style: lower-roman;
+    margin-left: 1.5rem;
+}
+
+.navigation li {
+    list-style: decimal;
+    margin-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.main .section h2 {
+    font-weight: bold;
+    color: blue;
+    font-size: x-large;
+}
+
+
+div.section img {
+    width: 25%;
+}
+
+div.sub-section ul > p {
+    font-style: oblique;
+    font-size: larger;
+}
+
+.tbody {
+    font-style: italic;
+    color: coral;
+}
+
+.header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    font-size: xx-large;
+}
+
+.header ~ * p {
+    color: blueviolet;
+}
+

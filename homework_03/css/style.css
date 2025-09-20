@@ -64,3 +64,6 @@ div.sub-section ul > p {
     color: blueviolet;
 }
 
+.header h1 ~ * {
+    color: aqua;
+}

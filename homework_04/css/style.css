@@ -1,0 +1,92 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+h1 {
+  padding: 15px;
+  padding-top: 35px;
+  text-align: center;
+  text-decoration: line-through;
+  text-decoration-style: dotted;
+  text-decoration-color: teal;
+  text-shadow: 15px 35px 3px black, -15px -35px 4px orange;
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  padding: 10px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  color: burlywood;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+h1,
+h2 {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+}
+
+#sun h2 {
+  text-decoration: overline underline;
+  text-decoration-color: black;
+  text-decoration-style: wavy;
+}
+
+nav {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+nav > ol > li {
+  list-style-type: decimal;
+}
+
+.h1 ~ * {
+  color: blueviolet;
+}
+
+body {
+  color: black;
+}
+
+.image-section {
+  max-width: 150px;
+  margin: 20px;
+}
+
+.footer p {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: yellowgreen;
+}
+
+.sub-section p {
+  font-family: "Gotham", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: blue;
+  margin-top: 20px;
+}
+
+.sub-section li {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  color: tomato;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+p.main-text {
+  color: brown;
+}

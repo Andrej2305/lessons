@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+.first-block {
+  max-width: 200px;
+  max-height: 100px;
+  background-color: aqua;
+  /* justify-content: center; */
+  text-align: center;
+  overflow: auto;
+  margin: auto;
+}
+
+main {
+  max-width: 1920px;
+  max-height: 760px;
+  margin: auto;
+}
+
+.second-block {
+  max-width: 1200px;
+  max-height: 760px;
+  margin: auto;
+}
+
+.main-header,
+.mini-header,
+.content {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+}
+
+.mini-header,
+.content {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-header {
+  font-weight: 800;
+  font-style: 32px;
+  line-height: 40px;
+  color: #2f302c;
+}
+
+.mini-header {
+  font-weight: 700;
+  color: #2f302c;
+}
+
+.content {
+  font-weight: 500;
+  color: #7e7f7c;
+}
+
+.main-header,
+.section {
+  text-align: center;
+}
+
+.item {
+  width: 33%;
+  display: inline-block;
+}

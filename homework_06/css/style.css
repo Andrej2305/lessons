@@ -41,6 +41,7 @@ footer {
 .hero__over_header {
   height: 28px;
   width: 183px;
+  margin-bottom: 20px;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -50,6 +51,7 @@ footer {
 .hero__header {
   height: 200px;
   width: 518px;
+  margin-bottom: 16px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -59,12 +61,14 @@ footer {
 .hero__line {
   margin: 10px;
   height: 0px;
+  margin-bottom: 36px;
   width: 308px;
   border: #2f302c 1px solid;
 }
 .hero__text {
   height: 28px;
   width: 257px;
+  margin-bottom: 20px;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;

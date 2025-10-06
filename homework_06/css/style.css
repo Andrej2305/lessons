@@ -3,57 +3,45 @@
 @import url("fonts.css");
 
 .header {
-  /* width: 1390px; */
   min-width: 1920px;
   min-height: 164px;
 }
 
 .main {
-  /* width: 1920px; */
   width: 100%;
   min-height: 1754px;
 }
 
 .footer {
-  /* width: 1390; */
-  min-width: 1920;
+  min-width: 1920px;
   min-height: 164px;
 }
 
 .hero {
-  /* width: 100%; */
-  /* height: 88.184438%; */
   min-height: 612px;
   background: #d4d4d4 url("../img/Rectangle.svg") center / cover no-repeat;
   margin-bottom: 80px;
 }
 
 [class*="__container"] {
-  width: 1390px;
+  max-width: 1390px;
   margin: 0 auto;
   font-size: 0;
 }
 
 .hero__container {
-  /* min-width: 1390px; */
-  /* height: 100%; */
   min-height: 612px;
 }
 
-/* .header__content {
-  margin: 61px 0px 61px;
-} */
-
 .img__logo {
-  /* padding: 61px 0px 61px; */
   margin: 61px 0px 61px;
 }
 
 .hero__content {
   width: 518px;
   height: 388px;
-  padding: 114px 0px 0px 744px;
-  /* почему для header__content сработал margin а для hero__content margin работает как-то иначе?*/
+  padding-top: 114px;
+  margin-left: auto;
 }
 
 .hero__over_header {
@@ -109,7 +97,7 @@
 .plans {
   min-width: 1440px;
   min-height: 1060px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   background: linear-gradient(
     to bottom,
     #272b41 0%,
@@ -119,15 +107,175 @@
   );
 }
 
+.plans__container {
+  min-height: 590px;
+}
+
+.plans__items {
+  padding: 327px 0px 142px;
+  max-width: 1070px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.plans__items::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.plans__item {
+  padding: 40px;
+  background-color: #ffffff;
+  width: 351px;
+  display: inline-block;
+  border-radius: 8px;
+  vertical-align: top;
+  box-shadow: 0px 13px 19px #00000012;
+}
+
+.plans__item:hover {
+  background-color: #e1f4ff;
+  color: #ffffff;
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+}
+
+.plans__item_header {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  margin-bottom: 17px;
+}
+
+.plans__item_details_price {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  margin-right: 16px;
+}
+
+.plans__item_details_more_per_month {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  line-height: 1.5;
+}
+
+.plans__item_details_more_sale {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  line-height: 1.3;
+}
+
+.plans__item_details_price,
+.plans__item_details_more {
+  display: inline-block;
+}
+
+.plans__item_details_more {
+  margin: 8.5px 0px 8.5px;
+  height: 40px;
+  text-align: left;
+}
+
+.plans__item_details {
+  margin-bottom: 17px;
+}
+
+.plans__item_line {
+  margin-bottom: 17px;
+  height: 4px;
+  max-width: 47px;
+  background-color: #31a0fe;
+}
+
+.plans__item_text {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  line-height: 1.3;
+  margin-bottom: 17px;
+}
+
+.plans__item_list {
+  min-height: 268px;
+  padding: 20px 0px 20px;
+  margin-bottom: 17px;
+}
+
+[class*="plans__item_list_item"] {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 2.3;
+  color: #252b42;
+  padding-left: 42px;
+  margin-bottom: 15px;
+  min-height: 32px;
+}
+
+.plans__item_list_item_green {
+  background: url("../img/green_check_badge.svg") left center no-repeat;
+}
+.plans__item_list_item_gray {
+  background: url("../img/gray_check_badge.svg") 0 0 no-repeat;
+}
+
+.plans__item_button {
+  text-align: center;
+}
+
+.plans__item_button .button {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  text-decoration: none;
+
+  border: 2px solid #252b42;
+  border-radius: 24px;
+}
+
+.plans__item_button .button:hover {
+  background-color: #31a0fe; /* тёмный фон */
+  color: #ffffff; /* белый текст */
+  border: 0px;
+}
+
 .footer__container {
   min-height: 164px;
   padding-bottom: 72px;
 }
 
 .footer__line {
-  margin: 10px;
+  margin: 10px 10px 72px 10px;
   height: 0px;
-  margin-bottom: 72px;
   width: 1392px;
   border: #2f302c 1px solid;
 }
@@ -149,8 +297,8 @@
 
 .footer__social {
   width: 176px;
-  margin-left: 70px; /* фиксированный отступ */
-  text-align: justify; /* если иконки должны прижиматься вправо */
+  margin-left: 70px;
+  text-align: justify;
 }
 
 .footer__social::after {

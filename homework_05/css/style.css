@@ -2,65 +2,59 @@
 
 @import url("fonts.css");
 
-.second-block {
-  max-width: 1200px;
-  max-height: 760px;
-  padding: 82px 0px 82px;
-  margin: auto;
+.section__why_us {
+	max-width: 1200px;
+	font-family: "Lato", "Arial", sans-serif;
+	font-style: normal;
+	margin: 0 auto;
 }
 
-.main-header,
-.mini-header,
-.content {
-  font-family: "Lato", "Arial", sans-serif;
-  font-style: normal;
+.section__why_us_header {
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 40px;
+	color: #2f302c;
+	min-height: 192px;
 }
 
-.mini-header,
-.content {
-  font-size: 16px;
-  line-height: 20px;
+.section__why_us_header > h1 {
+	padding-top: 77px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.main-header {
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 40px;
-  color: #2f302c;
-  margin-bottom: 72px;
+.section__why_us_items {
+	font-size: 0;
+	margin: -34px;
 }
 
-.mini-header {
-  font-weight: 700;
-  color: #2f302c;
+.section__why_us_item {
+	display: inline-block;
+	max-width: 33.33333%;
+	padding: 34px;
+	vertical-align: top;
 }
 
-.content {
-  font-weight: 500;
-  color: #7e7f7c;
+.section__why_us_card_image {
+	max-width: 55px;
+	margin: 0 auto 27px;
 }
 
-.main-header,
-.items {
-  text-align: center;
+.section__why_us_card_content {
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
 }
 
-.items {
-  margin: 0px 101px 68px 101px;
-  font-size: 0;
+.section__why_us_card_content > h2 {
+	font-weight: 700;
+	color: #2f302c;
+	margin-bottom: 24px;
+	line-height: 1.25;
 }
 
-.item {
-  width: 33%;
-  display: inline-block;
-  text-align: center;
-  padding: 0px 34px 0px 34px;
-}
-
-.img {
-  margin-bottom: 24px;
-}
-
-.mini-header {
-  margin-bottom: 24px;
+.section__why_us_card_content > p {
+	font-weight: 500;
+	color: #7e7f7c;
+	line-height: 1.25;
 }

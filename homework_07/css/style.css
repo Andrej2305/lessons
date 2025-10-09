@@ -47,7 +47,7 @@ a:active {
 	height: 33.3333%;
 	width: 33.3333%;
 	/* display: inline-block; */
-	background-color: rgb(160, 75, 75);
+	background-color: rgba(101, 178, 103, 0.208);
 	font-size: 20px;
 	display: inline-flex;
 	justify-content: center;
@@ -128,7 +128,7 @@ a:active {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background: url("../img/face.jpg") center center / cover no-repeat;
+	background: url("../img/face.jpg") center / contain no-repeat;
 	visibility: hidden;
 	pointer-events: none;
 	transition: opacity 0.3s ease;

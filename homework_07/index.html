@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Homework 7</title>
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="start"><a href="#">Are you ready?</a></div>
+		</header>
+
+		<main class="main">
+			<!-- <div class="hover-me">Наведи курсор 🐭</div> -->
+			<audio id="hoverSound" src="audio/scream-81768.mp3" preload="auto"></audio>
+
+			<section class="game">
+				<div class="block-1"><p>Гава́ї — штат США</p></div>
+				<div class="block-2">
+					<p>Гаваї, найвідоміший своєю найвищою серед Гавайських островів горою Мауна-Кеа (4201 м)</p>
+				</div>
+				<div class="block-3"><p>Мауї, другий за територією острів</p></div>
+				<div class="block-4"><p>На островах інколи бувають землетруси.</p></div>
+				<div class="block-5">
+					<p>Адміністративний центр і головний порт — Гонолулу на острові Оаху.</p>
+				</div>
+				<div class="block-6">
+					<p>
+						На Гаваях виробляють цукор, жіночий одяг; вирощують ананаси, цукрову тростину, каву, квіти.
+					</p>
+				</div>
+				<div class="block-7">
+					<p>За даними перепису 2010 року, населення Гаваїв становило 1 360 301 осіб.</p>
+				</div>
+				<div class="block-8"><p>Гаваї мають тропічний пасатний клімат.</p></div>
+				<div class="block-9">
+					<p>Сніг випадає на вершинах Мауна-Кеа та Мауна-Лоа, що на острові Гаваї, узимку.</p>
+				</div>
+
+				<div class="scream-overlay"></div>
+			</section>
+		</main>
+
+		<footer class="footer"></footer>
+
+		<script>
+			const el = document.querySelector(".block-6");
+			const sound = document.getElementById("hoverSound");
+
+			el.addEventListener("mouseenter", () => {
+				sound.currentTime = 0;
+				sound.play();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+	background-color: #d5c7c7;
+}
+
+.header {
+	height: 20%;
+}
+
+.start {
+	margin-left: 10%;
+	padding-top: 10%;
+	height: 100%;
+	width: 20%;
+	/* background-color: orange; */
+	text-align: center;
+}
+
+.start > a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: red;
+}
+
+.footer {
+	height: 20%;
+}
+
+.main {
+	height: 60%;
+}
+
+.game {
+	background: url("../img/gavai.jpg") center center / cover no-repeat;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+[class*="block"] {
+	height: 33.3333%;
+	width: 33.3333%;
+	/* display: inline-block; */
+	background-color: rgb(160, 75, 75);
+	font-size: 20px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: top;
+	visibility: hidden;
+}
+
+.header:has(.start:hover) + .main .block-1 {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-1:hover + .block-2,
+.block-1:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-2:hover + .block-3,
+.block-2:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-3:hover ~ .block-6,
+.block-3:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+/* .game:has(.block-6:hover) .block-5,
+.block-6:hover {
+	visibility: visible;
+	pointer-events: auto;
+} */
+
+.game:has(.block-5:hover) .block-4,
+.block-5:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-4:hover ~ .block-7,
+.block-4:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-7:hover + .block-8,
+.block-7:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-8:hover + .block-9,
+.block-8:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.block-9:hover ~ .block-8,
+.block-9:hover {
+	visibility: visible;
+	pointer-events: auto;
+}
+
+/* .block-9 {
+	background: #eee;
+	color: #ff0000;
+	cursor: pointer;
+	transition: background 0.3s;
+} */
+
+.scream-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/face.jpg") center center / cover no-repeat;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+	z-index: 999;
+}
+
+.block-6:hover ~ .scream-overlay,
+.game:has(.block-6:hover) .block-5,
+.block-6:hover {
+	visibility: visible;
+}

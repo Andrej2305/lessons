@@ -128,7 +128,7 @@ a:active {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background: url("../img/face.jpg") center / contain no-repeat;
+	background: url("../img/face.jpg") 50% 30% / cover no-repeat;
 	visibility: hidden;
 	pointer-events: none;
 	transition: opacity 0.3s ease;

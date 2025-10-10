@@ -12,11 +12,15 @@ body {
 
 .start {
 	margin-left: 10%;
-	padding-top: 10%;
+	/* margin-top: 10%; */
 	height: 100%;
 	width: 20%;
 	/* background-color: orange; */
 	text-align: center;
+}
+
+.start > a {
+	margin-top: 70%;
 }
 
 .start > a:hover {
@@ -128,7 +132,7 @@ a:active {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background: url("../img/face.jpg") 50% 30% / cover no-repeat;
+	background: url("../img/face.jpg") center / contain no-repeat;
 	visibility: hidden;
 	pointer-events: none;
 	transition: opacity 0.3s ease;

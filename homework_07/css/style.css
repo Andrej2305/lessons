@@ -4,6 +4,8 @@
 
 body {
 	background-color: #d5c7c7;
+	width: 1440px;
+	height: 800px;
 }
 
 .header {
@@ -20,7 +22,7 @@ body {
 }
 
 .start > a {
-	margin-top: 50%;
+	margin-top: 30%;
 }
 
 .start > a:hover {

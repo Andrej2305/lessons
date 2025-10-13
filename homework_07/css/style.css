@@ -3,7 +3,7 @@
 @import url("fonts.css");
 
 body {
-	background-color: #d5c7c7;
+	background: url("../img/luke-mckeown-nlyWZtWTzCo-unsplash.jpg") center center / cover no-repeat;
 	width: 1440px;
 	/* height: 800px; */
 	margin: 0 auto;
@@ -21,7 +21,8 @@ body {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	width: 33.3333%;
-	font-size: 20px;
+	font-size: 30px;
+	color: green;
 }
 
 .start::after {
@@ -35,11 +36,12 @@ body {
 }
 
 a:active {
-	color: red;
+	color: #ff0000;
 }
 
 .game {
-	background: url("../img/gavai.jpg") center center / cover no-repeat;
+	/* background: url("../img/aussieactive-VxFQCqaI7pk-unsplash.jpg") center center / cover no-repeat; */
+	/* opacity: 1; */
 	width: 70%;
 	height: 600px;
 	margin: 0px auto 30px;
@@ -55,6 +57,7 @@ a:active {
 	font-size: 20px;
 	vertical-align: top;
 	visibility: hidden;
+	color: #ffffff;
 }
 
 [class*="block"] > p {

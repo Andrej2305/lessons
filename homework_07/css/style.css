@@ -5,25 +5,29 @@
 body {
 	background-color: #d5c7c7;
 	width: 1440px;
-	height: 800px;
+	/* height: 800px; */
 	margin: 0 auto;
 }
 
-.header {
-	height: 20%;
-}
-
 .start {
-	margin-left: 10%;
-	/* margin-top: 10%; */
-	height: 100%;
-	width: 25%;
+	margin: 0 auto;
+	width: 70%;
+	font-size: 0;
 	/* background-color: orange; */
 	text-align: center;
 }
 
 .start > a {
-	margin-top: 30%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 33.3333%;
+	font-size: 20px;
+}
+
+.start::after {
+	content: "";
+	width: 66.6666%;
+	display: inline-block;
 }
 
 .start > a:hover {
@@ -34,27 +38,20 @@ a:active {
 	color: red;
 }
 
-.footer {
-	height: 20%;
-}
-
-.main {
-	height: 60%;
-}
-
 .game {
 	background: url("../img/gavai.jpg") center center / cover no-repeat;
-	width: 80%;
-	height: 100%;
-	margin: 0 auto;
+	width: 70%;
+	height: 600px;
+	margin: 0px auto 30px;
 	font-size: 0;
 }
 
 [class*="block"] {
-	height: 33.3333%;
-	width: 33.3333%;
+	height: calc(100% / 3);
+	width: calc(100% / 3);
 	display: inline-block;
-	background-color: rgba(101, 178, 103, 0.208);
+	background-color: rgba(101, 178, 103, 0.208) !important;
+	background-color: brown;
 	font-size: 20px;
 	vertical-align: top;
 	visibility: hidden;
@@ -136,4 +133,54 @@ a:active {
 .game:has(.block-6:hover) .block-5,
 .block-6:hover {
 	visibility: visible;
+}
+
+.content {
+	width: 351px;
+	padding: 0px 40px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0px 13px 19px #db0e0e12;
+	margin: 0 auto;
+}
+
+.main::after {
+	content: "";
+	display: block;
+	height: 30px;
+}
+
+.content__list {
+	padding: 16px 0px 16px;
+}
+
+.content__item {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: #252b42;
+	margin-bottom: 15px;
+	letter-spacing: 0.2px;
+	line-height: 32px;
+}
+
+.content__item--green::before {
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	background: url("../img/green_check_badge.svg") left center no-repeat;
+}
+
+.content__item--gray::before {
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	background: url("../img/gray_check_badge.svg") left center no-repeat;
 }

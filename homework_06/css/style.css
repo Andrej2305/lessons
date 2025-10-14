@@ -82,7 +82,7 @@
 
 .plans {
 	/* min-width: 100%; */
-	margin: 0px 264px 0px;
+	/* margin: 0px 264px 0px; */
 	background: linear-gradient(
 		to bottom,
 		#272b41 0%,
@@ -94,6 +94,7 @@
 
 .plans__container {
 	padding: 327px 0px 142px;
+	width: 100%;
 }
 
 .plans__items {
@@ -111,7 +112,7 @@
 .plans__item {
 	padding: 40px;
 	background-color: #ffffff;
-	width: 351px;
+	max-width: 351px;
 	display: inline-block;
 	border-radius: 8px;
 	vertical-align: top;

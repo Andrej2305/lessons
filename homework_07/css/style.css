@@ -119,7 +119,7 @@ a:active {
 	pointer-events: auto;
 }
 
-.scream-overlay {
+/* .scream-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -130,9 +130,9 @@ a:active {
 	pointer-events: none;
 	transition: opacity 0.3s ease;
 	z-index: 999;
-}
+} */
 
-.block-6:hover ~ .scream-overlay,
+/* .block-6:hover ~ .scream-overlay, */
 .game:has(.block-6:hover) .block-5,
 .block-6:hover {
 	visibility: visible;

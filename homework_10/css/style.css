@@ -95,14 +95,26 @@
 	display: block;
 	position: relative;
 	z-index: 1;
-	margin-top: -14px;
+	margin-top: -16px;
 }
 
-.banner {
+/* .banner {
 	position: relative;
 	background: #f7ecad;
 	border-radius: 16px;
 	padding: 30px 0 16px 22px;
+	text-align: left;
+	white-space: nowrap;
+} */
+
+.banner {
+	background: url("../img/flag.png") no-repeat right center;
+	background-size: contain;
+	background-color: #f7ecad;
+	border-radius: 16px;
+	padding: 25px 20px 10px 20px;
+	overflow: hidden;
+
 	text-align: left;
 	white-space: nowrap;
 }
@@ -150,10 +162,10 @@
 	vertical-align: middle;
 } */
 
-.banner__img {
+/* .banner__img {
 	position: absolute;
 	top: 50%;
-	right: 0px; /* отступ от правого края баннера */
+	right: 0px; 
 	transform: translateY(-50%);
 }
 .banner__img img {
@@ -161,4 +173,4 @@
 	max-width: 270px;
 	height: auto;
 	border-radius: 8px;
-}
+} */

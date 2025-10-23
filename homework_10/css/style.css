@@ -1,0 +1,164 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+.wrapper {
+	background: url("../img/pexels-thomasronveaux-2496683.jpg");
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	padding: 30px 0px;
+	text-align: center;
+	z-index: 10;
+}
+
+.wrap-header {
+	display: inline-block;
+	position: relative;
+}
+
+.container-header {
+	display: block;
+	background: #fff;
+	border-radius: 12px;
+	padding: 4px 6px;
+	position: relative;
+	z-index: 2;
+}
+
+.list {
+	font-size: 0;
+}
+
+.list__items {
+	margin: 0;
+	padding: 4px 1px;
+	font-size: 0; /* убираем "щели" между <li> */
+	white-space: nowrap;
+}
+
+.list__item {
+	display: inline-block;
+	padding: 20px 20px;
+	vertical-align: middle;
+	border-radius: 4px;
+	margin: 0px 2px;
+}
+
+.list__span {
+	display: inline-block;
+	font-size: 15px;
+	font-family: "Geometria", sans-serif;
+	font-weight: 300;
+	vertical-align: middle;
+	line-height: 24px;
+}
+
+.list__item--gray {
+	position: relative;
+	background-color: #f2f4f6;
+}
+
+.list__item--gray::after {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 8px;
+	background: url("../img/p24.svg") no-repeat center / contain;
+	vertical-align: middle;
+}
+
+.list__item:hover {
+	background-color: #e7ebed;
+}
+
+.list__item--lens::after {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 8px;
+	background: url("../img/lens.svg") no-repeat center / contain;
+	vertical-align: middle;
+}
+
+.banner-header {
+	display: block;
+	position: relative;
+	z-index: 1;
+	margin-top: -14px;
+}
+
+.banner {
+	position: relative;
+	background: #f7ecad;
+	border-radius: 16px;
+	padding: 30px 0 16px 22px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.banner__header,
+.banner__button {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 16px;
+}
+
+.banner__header p {
+	font-family: "Geometria", sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 22px;
+	letter-spacing: 0.4px;
+	margin: 0;
+	margin-right: 20px;
+	color: #000000b8;
+}
+
+.button-banner__first {
+	display: inline-block;
+	border: 1px solid #979797;
+	border-radius: 27px;
+	padding: 4px 20px;
+	font-family: "Geometria", sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	font-style: normal;
+	margin-right: 20px;
+}
+
+.button-banner__first:hover {
+	background-color: #69aa36;
+	color: #fff;
+}
+
+/* .banner__img img {
+	display: inline-block;
+	max-width: 180px;
+	height: auto;
+	border-radius: 8px;
+	vertical-align: middle;
+} */
+
+.banner__img {
+	position: absolute;
+	top: 50%;
+	right: 0px; /* отступ от правого края баннера */
+	transform: translateY(-50%);
+}
+.banner__img img {
+	display: block;
+	max-width: 270px;
+	height: auto;
+	border-radius: 8px;
+}

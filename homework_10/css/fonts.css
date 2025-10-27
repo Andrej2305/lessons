@@ -30,6 +30,14 @@
 
 @font-face {
 	font-family: "Geometria";
+	src: url("../fonts/Geometria/geometria-regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Geometria";
 	src: url("../fonts/Geometria/geometria_medium.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;

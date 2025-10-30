@@ -1,0 +1,182 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+	background-color: #a19c9c;
+}
+
+.main {
+	width: 100%;
+}
+
+.main__container {
+	min-width: 600px;
+	width: 800px;
+	min-height: 600px;
+	position: relative;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	/* overflow: auto; */
+	background-color: #837e7e;
+}
+
+/* Wheels ------------------------- */
+
+.car__wheel {
+	width: 100px;
+	height: 100px;
+	background-color: #c1c1c1;
+	position: absolute;
+	bottom: 20px;
+	border-radius: 50%;
+	border: solid 15px black;
+	outline: solid 5px #837e7e;
+}
+
+.car__wheel--right {
+	left: 150px;
+}
+
+.car__wheel--left {
+	right: 150px;
+}
+
+.car__wheel::after {
+	content: "";
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #000000;
+	translate: -50% -50%;
+	border-radius: 50%;
+	outline: dashed 18px #565656;
+}
+
+/* ----------------- */
+
+/* Carcase ----------------- */
+
+.car__carcase {
+	width: 610px;
+	height: 180px;
+	background-color: #d4381c;
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 600px 700px 100px 100px;
+}
+
+.car__carcase::before,
+.car__carcase::after {
+	content: "";
+	width: 40px;
+	height: 10px;
+	position: absolute;
+	border-radius: 10px / 10px;
+	background-color: #000000;
+}
+
+.car__carcase::before {
+	bottom: 130px;
+	left: 260px;
+}
+
+.car__carcase::after {
+	bottom: 130px;
+	left: 350px;
+}
+
+.car__light--main {
+	width: 45px;
+	height: 65px;
+	position: absolute;
+	bottom: 30px;
+	left: -10px;
+	background-color: #e7e18c;
+	border-radius: 250px 100px 100px 70px;
+}
+
+.car__light--main:hover {
+	background-color: #f5e82e;
+	box-shadow: -50px 0 30px 40px #ffff64b4;
+}
+
+.car__light--rear {
+	width: 20px;
+	height: 35px;
+	position: absolute;
+	bottom: 30px;
+	right: -7px;
+	background-color: #de3f33;
+	border-radius: 10px 200px 200px 10px;
+}
+
+.car__light--rear:hover {
+	background-color: #d41a0d;
+	box-shadow: 20px 0 30px 20px #e30f3dd0;
+}
+
+/* ----------------- */
+
+/* Glasses ----------------- */
+
+.car__glasses {
+	box-sizing: border-box;
+	display: inline-block;
+	position: absolute;
+	bottom: 230px;
+	left: 50%;
+	transform: translateX(-45%);
+}
+
+.car__glasses::before,
+.car__glasses::after {
+	display: inline-block;
+	content: "";
+	width: 200px;
+	height: 170px;
+	background-color: gold;
+	border: solid;
+	border-color: #d4381c;
+}
+
+.car__glasses::before {
+	border-width: 25px 6px 0 25px;
+	border-radius: 1500px 0 100px 80px;
+}
+
+.car__glasses::after {
+	border-width: 25px 30px 0 6px;
+	border-radius: 0 1300px 100px 90px;
+}
+
+/* ----------------- */
+
+/* Bumper ----------------- */
+
+.car__bumper {
+	width: 600px;
+	height: 25px;
+	background-color: #a42913;
+	position: absolute;
+	bottom: 65px;
+	left: 50%;
+
+	border-radius: 60px / 50px;
+
+	transform: translateX(-50%);
+}
+
+.test {
+	height: 1000px;
+	width: 100%;
+	background-color: #3a12d7;
+}

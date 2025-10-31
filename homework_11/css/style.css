@@ -294,11 +294,6 @@
 	overflow-wrap: anywhere;
 }
 
-.item--translate:hover,
-.practice__wrapper:hover > .item--translate {
-	translate: -100px -100%;
-}
-
 .item--translate,
 .item-scale--more,
 .item-scale--less,
@@ -313,22 +308,32 @@
 	transition: all 1s linear;
 }
 
+.practice__wrapper:has(.practice__item:hover) {
+	z-index: 6;
+}
+
+.item--translate:hover,
+.practice__wrapper:hover > .item--translate {
+	translate: -100px -100%;
+}
+
 .item-scale--more:hover,
 .practice__wrapper:hover > .item-scale--more {
 	scale: 1.4;
+}
+
+.item-scale--more:hover {
 	z-index: 5;
 }
 
 .item-scale--less:hover,
 .practice__wrapper:hover > .item-scale--less {
 	scale: 0.7;
-	z-index: 5;
 }
 
 .item-scale--mix:hover,
 .practice__wrapper:hover > .item-scale--mix {
 	scale: 1.6 0.5;
-	z-index: 5;
 }
 
 .item-rotate-left,
@@ -364,13 +369,11 @@
 .item-matrix:hover,
 .practice__wrapper:hover > .item-matrix {
 	transform: matrix(0.7, 0, 0, 1.2, 30, 80);
-	z-index: 5;
 }
 
 .item-multiple:hover,
 .practice__wrapper:hover > .item-multiple {
 	transform: translate(0px, 30px) rotate(45deg) scale(1.2);
-	z-index: 5;
 }
 
 .item-transform {
@@ -380,16 +383,14 @@
 .item-transform:hover,
 .practice__wrapper:hover > .item-transform {
 	rotate: -70deg;
-	z-index: 5;
 }
 
 .practice__wrapper {
-	perspective: 100px; /* расстояние от камеры до объекта */
-	perspective-origin: 45% 0%; /* точка обзора (справа-снизу) */
+	perspective: 100px;
+	perspective-origin: 45% 0%;
 }
 
 .item-perspective:hover,
 .practice__wrapper:hover > .item-perspective {
 	transform: rotateY(60deg);
-	z-index: 5;
 }

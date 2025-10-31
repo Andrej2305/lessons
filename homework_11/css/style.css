@@ -11,18 +11,36 @@
 
 .main {
 	width: 100%;
+	padding: 50px 0;
 }
 
 .main__container {
-	min-width: 600px;
-	width: 800px;
-	min-height: 600px;
-	position: relative;
+	padding: 50px 0 200px;
+	/* min-width: 600px;
+	min-height: 500px; */
+	/* min-width: 600px;
+	width: 800px; */
+	/* min-height: 600px; */
+	/* position: relative;
 	top: 200px;
 	left: 50%;
-	transform: translateX(-50%);
-	/* overflow: auto; */
-	background-color: #837e7e;
+	transform: translateX(-50%); */
+	/* padding-top: 50px; */
+	/* margin: 0 auto; */
+	background: url("../img/1708804823_kartinki-pibig-info-p-dom-svinki-peppi-kartinki-oboi-1.jpg")
+		no-repeat center / cover;
+}
+
+.car {
+	min-width: 600px;
+	width: 800px;
+	min-height: 500px;
+	position: relative;
+	top: 200px;
+	left: 70px;
+	/* background-color: #837e7e; */
+
+	margin: 0 auto;
 }
 
 /* Wheels ------------------------- */
@@ -35,7 +53,9 @@
 	bottom: 20px;
 	border-radius: 50%;
 	border: solid 15px black;
-	outline: solid 5px #837e7e;
+	outline: solid 5px #73717121;
+
+	transition-timing-function: linear;
 }
 
 .car__wheel--right {
@@ -57,6 +77,24 @@
 	translate: -50% -50%;
 	border-radius: 50%;
 	outline: dashed 18px #565656;
+}
+
+.car__wheels:hover .car__wheel {
+	animation: wheel-spin 3s linear infinite;
+}
+
+.car:has(.car__wheel:hover) .car__smoke {
+	opacity: 1;
+	visibility: visible;
+}
+
+@keyframes wheel-spin {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
 }
 
 /* ----------------- */
@@ -175,8 +213,183 @@
 	transform: translateX(-50%);
 }
 
-.test {
-	height: 1000px;
+/* ----------------- */
+
+/* Smoke ----------------- */
+
+.car__smoke {
+	position: absolute;
+	right: 70px;
+	bottom: 80px;
+	width: 30px;
+	height: 30px;
+	background-color: #5c5858;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 50%;
+	animation: smoke 2.5s ease-out infinite;
+}
+
+@keyframes smoke {
+	0% {
+		opacity: 0.75;
+		transform: translate(0, 0) scale(1);
+	}
+	100% {
+		opacity: 0.1;
+		transform: translate(50px, -50px) scale(2.8);
+	}
+}
+
+/* ----------------------- */
+
+.practice__container {
 	width: 100%;
-	background-color: #3a12d7;
+	padding: 100px;
+	background-color: #d9d7de;
+	box-sizing: border-box;
+	font-size: 0;
+}
+
+.practice__2d {
+	padding-bottom: 20px;
+}
+
+.practice__wrapper {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	width: 120px;
+	height: 120px;
+	background-color: #80008030;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #00000030;
+	border-radius: 4px;
+}
+
+.practice__item {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #d345d3;
+	text-align: center;
+
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.practice__item p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	/* transform: translateX(-50%); */
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+	overflow-wrap: anywhere;
+}
+
+.item--translate:hover,
+.practice__wrapper:hover > .item--translate {
+	translate: -100px -100%;
+}
+
+.item--translate,
+.item-scale--more,
+.item-scale--less,
+.item-scale--mix,
+.item-skew-x,
+.item-skew-y,
+.item-skew-xy,
+.item-matrix,
+.item-multiple,
+.item-transform,
+.item-perspective {
+	transition: all 1s linear;
+}
+
+.item-scale--more:hover,
+.practice__wrapper:hover > .item-scale--more {
+	scale: 1.4;
+	z-index: 5;
+}
+
+.item-scale--less:hover,
+.practice__wrapper:hover > .item-scale--less {
+	scale: 0.7;
+	z-index: 5;
+}
+
+.item-scale--mix:hover,
+.practice__wrapper:hover > .item-scale--mix {
+	scale: 1.6 0.5;
+	z-index: 5;
+}
+
+.item-rotate-left,
+.item-rotate-right {
+	transition: rotate 1s linear;
+}
+
+.item-rotate-left:hover,
+.practice__wrapper:hover > .item-rotate-left {
+	rotate: 45deg;
+}
+
+.item-rotate-right:hover,
+.practice__wrapper:hover > .item-rotate-right {
+	rotate: -315deg;
+}
+
+.item-skew-x:hover,
+.practice__wrapper:hover > .item-skew-x {
+	transform: skewX(-40deg);
+}
+
+.item-skew-y:hover,
+.practice__wrapper:hover > .item-skew-y {
+	transform: skewY(20deg);
+}
+
+.item-skew-xy:hover,
+.practice__wrapper:hover > .item-skew-xy {
+	transform: skew(-20deg, 20deg);
+}
+
+.item-matrix:hover,
+.practice__wrapper:hover > .item-matrix {
+	transform: matrix(0.7, 0, 0, 1.2, 30, 80);
+	z-index: 5;
+}
+
+.item-multiple:hover,
+.practice__wrapper:hover > .item-multiple {
+	transform: translate(0px, 30px) rotate(45deg) scale(1.2);
+	z-index: 5;
+}
+
+.item-transform {
+	transform-origin: 100% 100%;
+}
+
+.item-transform:hover,
+.practice__wrapper:hover > .item-transform {
+	rotate: -70deg;
+	z-index: 5;
+}
+
+.practice__wrapper {
+	perspective: 100px; /* расстояние от камеры до объекта */
+	perspective-origin: 45% 0%; /* точка обзора (справа-снизу) */
+}
+
+.item-perspective:hover,
+.practice__wrapper:hover > .item-perspective {
+	transform: rotateY(60deg);
+	z-index: 5;
 }

@@ -1,0 +1,392 @@
+@import url("reset.css");
+
+@import url("fonts.css");
+
+body {
+	font-family: "Lato", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	background-color: #ffffff;
+	color: #2f302c;
+	text-transform: uppercase;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.header,
+.footer {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	background-color: #696a6769;
+}
+
+.feature {
+	max-width: 1920px;
+}
+
+[class*="__container"] {
+	padding: 82px 15px;
+	/* margin: 82px 0; */
+	background-color: #ffffff;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	max-width: 1422px;
+}
+
+[class*="__header"] {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	margin: 0 auto 72px;
+	/* justify-content: right; */
+	font-size: 0px;
+}
+
+[class*="__title"] {
+	display: flex;
+	justify-content: center;
+
+	font-size: 32px;
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+.feature__menu {
+	margin: 36px 0 0;
+	display: flex;
+	flex-shrink: 1;
+	flex-grow: 0;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.menu__list {
+	display: flex;
+	gap: 8px 48px;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.menu__item {
+	display: flex;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.menu__item:hover {
+	text-decoration: underline;
+}
+
+/* --------------- */
+
+.feature__items {
+	display: flex;
+	gap: 72px 36px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.product-card {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 380px;
+	flex-shrink: 0;
+	flex-grow: 1;
+	max-width: 440px;
+	transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+	transform: scale(1.1);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card__img {
+	display: flex;
+	background-color: #f6f6f6;
+	margin-bottom: 32px;
+}
+
+.product-card__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	padding-bottom: 10px;
+}
+
+.product-card__header {
+	flex-grow: 1;
+}
+
+.product-card__body > div:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.product-card__rating {
+	display: inline-flex;
+}
+
+.product-card__rating > img {
+	width: 16px;
+	height: 16px;
+	margin: 0 4px;
+}
+
+.product-card__price {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 800;
+}
+
+/* --------------- */
+
+.choose__container {
+	align-items: center;
+}
+
+.choose_items {
+	max-width: 1180px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 68px;
+}
+
+.choose__item {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 348px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+.choose__item > div:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.choose-card__img {
+	width: 60px;
+	height: 60px;
+
+	animation-name: choose-rotate;
+	animation-duration: 2s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-play-state: paused;
+}
+
+.choose-card__img:hover {
+	animation-play-state: running;
+}
+
+.choose-card__text {
+	text-transform: initial;
+	color: #7e7f7c;
+}
+
+@keyframes choose-rotate {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(45deg);
+	}
+	75% {
+		transform: rotate(-45deg);
+	}
+}
+
+/* ------ register --------- */
+
+.register__header {
+	margin: 0;
+}
+
+.register__subtitle {
+	font-size: 16px;
+	color: #7e7f7c;
+	line-height: 1.25;
+	font-weight: 700;
+	display: flex;
+	align-self: center;
+
+	margin-top: 36px;
+}
+
+/* ------ register --------- */
+
+/* ------ personal-information --------- */
+
+.personal-data__register {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px 0px;
+	/* flex-direction: column; */
+}
+
+.registration-data {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	/* flex-direction: column; */
+}
+
+.input-wrapper,
+.primary-button {
+	position: relative;
+	display: flex;
+	flex-basis: 336px;
+	flex-shrink: 0;
+	/* padding: 12px 0; */
+	min-height: 44px;
+}
+
+.input-wrapper::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	background: #d4d4d4;
+}
+
+.input-wrapper input {
+	width: 100%;
+	height: 100%;
+	/* border: none; */
+	outline: none;
+}
+
+.input-wrapper input::placeholder {
+	color: #7e7f7c;
+}
+
+.input-wrapper__phone {
+	flex-basis: 100%;
+}
+
+.primary-button {
+	background-color: #2f302c;
+	color: #ffffff;
+	align-items: center;
+	justify-content: center;
+	text-transform: none;
+}
+
+.primary-button button {
+	color: #ffffff;
+	background-color: #2f302c;
+}
+
+.personal-information__data,
+.personal-information__block {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 600px;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+
+.personal-information__data {
+	max-width: 712px;
+}
+
+.personal-information__block {
+	background-color: #f6f6f6;
+	max-width: 600px;
+	position: relative;
+}
+
+.personal-information__subtitle,
+.personal-information__title {
+	justify-content: start;
+}
+
+.personal-information__subtitle a {
+	margin-left: 4px;
+	color: #2f302c;
+	text-decoration: underline;
+}
+
+.personal-information__subtitle {
+	font-size: 16px;
+	color: #7e7f7c;
+	text-transform: none;
+	line-height: 1.25;
+	display: flex;
+
+	margin-top: 36px;
+}
+
+.personal-information__img {
+	display: flex;
+	justify-content: end;
+}
+
+.personal-information__img img {
+	margin-right: 50px;
+}
+
+.personal-information__label {
+	width: 51px;
+	background-color: #ce0000;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 700;
+	padding: 4px 8px;
+	border-radius: 4px;
+	position: absolute;
+	top: 224px;
+	left: 80px;
+}
+
+.personal-information__text {
+	width: 184px;
+	height: 160px;
+	background-color: transparent;
+	font-size: 32px;
+	line-height: 1.25;
+	color: #2f302c;
+	font-weight: 800;
+	position: absolute;
+	top: 276px;
+	left: 80px;
+	overflow: auto;
+}
+
+@media (width < 1342px) {
+	.input-wrapper {
+		flex-basis: 500px;
+	}
+}
+
+@media (width < 1230px) {
+	.personal-information__block {
+		display: none;
+	}
+
+	.personal-information__subtitle,
+	.personal-information__title,
+	.registration-data,
+	.personal-data__register {
+		justify-content: center;
+	}
+}

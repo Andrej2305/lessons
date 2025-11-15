@@ -27,9 +27,9 @@ body {
 	background-color: #696a6769;
 }
 
-.feature {
+/* .feature {
 	max-width: 1920px;
-}
+} */
 
 [class*="__container"] {
 	padding: 82px 15px;
